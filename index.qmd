@@ -1,0 +1,3 @@
+# Preface {.unnumbered}
+
+This is a working series of notebooks documenting a spatial analytics workflow, and extracting insight for pedestrianization of Oxford Street, London.

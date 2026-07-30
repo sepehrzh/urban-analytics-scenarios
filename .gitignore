@@ -10,3 +10,5 @@ data/raw/
 *.gpkg
 *.shp
 "@ | Out-File -Encoding utf8 .gitignore
+/.quarto/
+**/*.quarto_ipynb

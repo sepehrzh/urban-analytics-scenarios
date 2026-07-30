@@ -1,0 +1,15 @@
+project:
+  type: book
+
+book:
+  title: "Oxford Street Spatial Study"
+  author: "Sepehr Zhand"
+  chapters:
+    - index.qmd
+    - notebooks/01-intro.ipynb
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreport
