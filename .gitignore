@@ -1,4 +1,3 @@
-@"
 __pycache__/
 *.pyc
 .venv/
@@ -6,9 +5,23 @@ venv/
 *.egg-info/
 .ipynb_checkpoints/
 .DS_Store
-data/raw/
 *.gpkg
 *.shp
-"@ | Out-File -Encoding utf8 .gitignore
-/.quarto/
+.quarto/
 **/*.quarto_ipynb
+*.pkl
+*.parquet
+
+# No data of any kind published to GitHub
+data/
+
+# Editor / environment — machine-specific, not portable
+.vscode/
+
+# Quarto execution cache — regenerated on render
+notebooks/cache/
+**/cache/
+
+# Quarto render output — keep the folder + a note, ignore everything rendered
+_book/*
+!_book/README.md
