@@ -1,2 +1,0 @@
-New-Item -Path "_book" -ItemType Directory -Force
-"This folder is Quarto-rendered output from the notebooks in this repo. Run ``quarto render`` to regenerate it locally — contents are not tracked in version control." | Out-File -Encoding utf8 _book/README.md

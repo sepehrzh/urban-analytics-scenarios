@@ -6,7 +6,9 @@ book:
   author: "Sepehr Zhand"
   chapters:
     - index.qmd
-    - notebooks/01-intro.ipynb
+    - notebooks/01-initial-model.ipynb
+    - notebooks/02-POIs.ipynb
+    - notebooks/03-arteries.ipynb
 
 format:
   html:

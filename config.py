@@ -25,6 +25,15 @@ RAW_DATA        = os.path.join(REPO_ROOT, "data", "downloads")
 
 # Area coordinates: This comes from https://boundingbox.klokantech.com/
 BBOX        = [-0.306909,51.446998,-0.009249,51.578401] # Oxford Street, London
+POI_BBOX    = [-0.220678,51.498466,-0.074337,51.528699] # Oxford Street, London
 
 # Centrality analysis parameters
 DISTANCES   = [400, 800, 1600, 2000, 5000, 10000]  # in meters
+
+# Angular-continuity tracing (network_tracing.py) — see HANDOFF-02.md for
+# rationale and open sensitivity-analysis item
+NODE_DECIMALS = 3               # coordinate rounding tolerance (mm-scale at EPSG:32630)
+CORRIDOR_WIDTH = 40              # generous sanity-check width for Oxford St core trace
+CORE_DEFLECTION_THRESHOLD = 20   # per-hop, defining Oxford Street itself
+ARTERY_DEFLECTION_THRESHOLD = 40 # per-hop, general artery tracing (was 30 — confirm intentional)
+CUMULATIVE_DEFLECTION_CAP = 45   # total drift from entry bearing, artery tracing

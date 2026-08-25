@@ -25,3 +25,4 @@ notebooks/cache/
 # Quarto render output — keep the folder + a note, ignore everything rendered
 _book/*
 !_book/README.md
+/.quarto/

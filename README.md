@@ -1,4 +1,5 @@
-﻿# Oxford Street Pedestrianization Analytics
+﻿# Scenario modelling
+This thread of notebooks aism to open up discussions about the ways in which early career researchers and professionals would think about asking questions about cities and try and elaborate on what they mean. each series will focus on a certain problem and through various notebooks different angles of the problem will be explored. 
 
 ## Installation & Setup
 
