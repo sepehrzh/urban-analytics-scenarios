@@ -11,6 +11,7 @@ venv/
 **/*.quarto_ipynb
 *.pkl
 *.parquet
+*.png
 
 # No data of any kind published to GitHub
 data/
