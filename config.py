@@ -33,7 +33,17 @@ DTM_DIR   = os.path.join(LIDAR_DIR, "DTM")
 for _dir in (DATA_DIR, OUTPUTS_DIR, RAW_DATA):
     os.makedirs(_dir, exist_ok=True)
 
-# Input files
+# -----------------------------------------------------------------------------
+# Input & Output File Paths
+# -----------------------------------------------------------------------------
+NETWORK_CENTRALITY_GPKG    = os.path.join(OUTPUTS_DIR, "network_centrality.gpkg")
+BUILDINGS_WITH_HEIGHT_GPKG = os.path.join(OUTPUTS_DIR, "buildings_with_height.gpkg")
+CLUSTERED_HIGHSTREET_GPKG  = os.path.join(OUTPUTS_DIR, "highstreet_segmented_profiles.gpkg")
+
+POIS_RAW_GPKG              = os.path.join(RAW_DATA, "pois_raw.gpkg")
+POI_CATEGORY_SUMMARY_CSV   = os.path.join(RAW_DATA, "poi_category_summary.csv")
+
+# -----------------------------------------------------------------------------
 
 # Area coordinates: This comes from https://boundingbox.klokantech.com/
 BBOX        = [-0.306909,51.446998,-0.009249,51.578401] # Oxford Street, London
@@ -55,3 +65,21 @@ LIDAR_RESOLUTION = 1  # metres; EA LIDAR available at 1m or 0.5m composite DTM/D
 # Coordinate reference systems
 GEOGRAPHIC_CRS = "EPSG:4326"   # WGS84 — what OSM/osmnx/LIDAR downloads arrive in
 PROJECTED_CRS  = "EPSG:32630"  # UTM zone 30N — used for all length/area/distance work
+
+# -----------------------------------------------------------------------------
+# Frontage Tessellation & Clustering Parameters
+# -----------------------------------------------------------------------------
+FRONTAGE_BUFFER_M       = 40.0  # Max frontage zone width (meters)
+TESSELLATION_SAMPLE_M   = 5.0   # Point densification distance for Voronoi cells (meters)
+POI_ASSIGN_MAX_DIST_M   = 50.0  # Max snapping distance for POIs (meters)
+
+HYBRID_MODEL_N_CLUSTERS  = 5     # Target cluster count (KMeans and SKATER)
+FEATURE_COLUMNS          = [
+    "poi_density_100m",
+    "shannon_entropy",
+    "vacant_rate_100m",
+    "frontage_density_100m",
+    "mean_height",
+    "std_dev_height",
+    "movement_conflict_index",
+]
