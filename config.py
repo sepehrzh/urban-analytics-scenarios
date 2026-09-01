@@ -58,7 +58,7 @@ NODE_DECIMALS = 3               # coordinate rounding tolerance (mm-scale at EPS
 CORRIDOR_WIDTH = 40              # generous sanity-check width for Oxford St core trace
 CORE_DEFLECTION_THRESHOLD = 20   # per-hop, defining Oxford Street itself
 ARTERY_DEFLECTION_THRESHOLD = 40 # per-hop, general artery tracing (was 30 — confirm intentional)
-CUMULATIVE_DEFLECTION_CAP = 45   # total drift from entry bearing, artery tracing
+CUMULATIVE_DEFLECTION_CAP = 60   # total drift from entry bearing, artery tracing
 
 LIDAR_RESOLUTION = 1  # metres; EA LIDAR available at 1m or 0.5m composite DTM/DSM
 
