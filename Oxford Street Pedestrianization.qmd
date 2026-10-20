@@ -1,4 +1,4 @@
 This exercise lays out a simple (non-commercialized) example of developing a pipeline, that usees multiple attributes such as network centrality, building height, 
 and frontages in the most central street of London, to systematically suggest if the segments of the street should be dealt with in certain ditinct ways. this allows for
 a scaled and tailored approach to planning the soft and hardscape for the street. 
-The idea in this comes from a long debated issue of pedestraianising the street in the recent years, 
+The idea in this comes from a long debated issue of pedestraianising the street in the recent years.

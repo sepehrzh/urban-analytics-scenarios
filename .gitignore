@@ -27,3 +27,4 @@ notebooks/cache/
 _book/*
 !_book/README.md
 /.quarto/
+*.env
