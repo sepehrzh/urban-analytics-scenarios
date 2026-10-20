@@ -2,16 +2,24 @@ project:
   type: book
 
 book:
-  title: "Oxford Street Spatial Study"
-  author: "Sepehr Zhand"
+  title: "Scenario Modelling Examples"
+  author: "Sepehr Zhand, Ph.D."
   chapters:
     - index.qmd
-    - notebooks/01-initial-model.ipynb
-    - notebooks/02-POIs.ipynb
-    - notebooks/03-arteries.ipynb
+    # - Oxford Street Pedestrianisation.qmd
+    #   - case studies/Oxford Street Pedestrianisation/01-initial-model.ipynb
+    #   - case studies/Oxford Street Pedestrianisation/02-POIs.ipynb
+    #   - case studies/Oxford Street Pedestrianisation/03-arteries.ipynb
+    #   - case studies/Oxford Street Pedestrianisation/04-building-morph.ipynb
+    #   - case studies/Oxford Street Pedestrianisation/05-frontage_assignment.ipynb
 
 format:
   html:
     theme: cosmo
+    toc: true
+    code-fold: true
+    code-tools: true
+    execute:
+      freeze: auto
   pdf:
     documentclass: scrreport
